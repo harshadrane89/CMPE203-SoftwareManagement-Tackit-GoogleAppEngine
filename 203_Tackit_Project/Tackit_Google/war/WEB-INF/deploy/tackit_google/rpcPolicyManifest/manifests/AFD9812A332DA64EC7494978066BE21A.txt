@@ -1,0 +1,2 @@
+serviceClass: com.tackit.client.GreetingService
+path: EFB24C50FAA4C67102579E498624B676.gwt.rpc

@@ -1,0 +1,7 @@
+INDEX VERSION 1.122+E:\Workspace\203_Tackit_Project\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3657223903.index
+3289534790.index
+2117389240.index
+1227745103.index
+3206208137.index
+844126578.index

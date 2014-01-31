@@ -1,0 +1,3 @@
+# Module tackit_google
+# RPC service class, partial path of RPC policy file
+com.tackit.client.GreetingService, EFB24C50FAA4C67102579E498624B676.gwt.rpc

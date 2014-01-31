@@ -1,0 +1,68 @@
+<%@page import="java.io.PrintWriter"%>
+<%@page import="com.tackit.DTO.Pin"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="com.tackit.DTO.User"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Tack -IT</title>
+
+</head>
+<body>
+
+
+	<%User userObj=(User) session.getAttribute("userInfo");
+boolean uListFlag=userObj.getBoardList().isEmpty();
+boolean fllwdListFlag=userObj.getFollowedBoardList().isEmpty();
+boolean feed=userObj.getFeedPinList().isEmpty();%>
+
+<%-- 	<%@include file="Navbar.jsp"%> --%>
+	<%=userObj.getFeedPinList().size() %>
+	<% if(!feed){
+ 	ArrayList<Pin> pFeedList=(ArrayList<Pin>)userObj.getFeedPinList();
+ 	int count=0;
+ 	int divider=0;
+ %>
+	<table class="table" cellpadding="10px" cellspacing="10px">
+		<%while(count!=pFeedList.size()) 
+ 		{ divider=0;
+ 		%>
+		<tr>
+			<%while(divider!=3){ 
+ 				if(count==0)
+ 				{
+ 					break;
+ 				}
+ 				else{
+ 				divider++;
+ 				Pin pin=pFeedList.get(count++);%>
+				<td>
+					<%=pin.getImgLocation() %>
+					<br>
+					<%=pin.getPinDescription()%>
+					<br>
+					<%=pin.getPinLink()%>
+					<br>
+				</td>
+			<%} }%>
+		</tr>
+		<%} %>
+	</table>
+
+
+	<% }
+	else
+	{%>
+	<h3>
+		<%="No feeds available" %>
+		</h3>
+	<%}
+	%>
+	<h3>
+		<%="No feeds available" %>
+		</h3>
+</body>
+</html>

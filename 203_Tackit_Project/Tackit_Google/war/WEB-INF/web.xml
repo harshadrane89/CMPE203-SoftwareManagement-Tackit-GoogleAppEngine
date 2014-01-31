@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee">
+
+  <!-- Servlets -->
+  
+<servlet>
+    <servlet-name>LoginVerify</servlet-name>
+    <servlet-class>com.tackit.servlet.Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginVerify</servlet-name>
+    <url-pattern>/LoginVerify</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>UManager</servlet-name>
+    <servlet-class>com.tackit.servlet.UserManager</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UManager</servlet-name>
+    <url-pattern>/UManager</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>SBoard</servlet-name>
+    <servlet-class>com.tackit.servlet.SBoardProcessor</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SBoard</servlet-name>
+    <url-pattern>/SBoard</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>CreateUser</servlet-name>
+    <servlet-class>com.tackit.servlet.Signup</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreateUser</servlet-name>
+    <url-pattern>/CreateUser</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Board</servlet-name>
+    <servlet-class>com.tackit.servlet.BoardProcessor</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Board</servlet-name>
+    <url-pattern>/Board</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>BoardCreator</servlet-name>
+    <servlet-class>com.tackit.servlet.CreateBoard</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BoardCreator</servlet-name>
+    <url-pattern>/BoardCreator</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>PinInfo</servlet-name>
+    <servlet-class>com.tackit.servlet.PinProcessor</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PinInfo</servlet-name>
+    <url-pattern>/PinInfo</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+    <servlet-name>greetServlet</servlet-name>
+    <servlet-class>com.tackit.server.GreetingServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>greetServlet</servlet-name>
+    <url-pattern>/tackit_google/greet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>Login.jsp</welcome-file>
+  </welcome-file-list>
+
+</web-app>

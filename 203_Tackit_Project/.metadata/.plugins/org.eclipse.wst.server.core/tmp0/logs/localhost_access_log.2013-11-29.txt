@@ -1,0 +1,13 @@
+127.0.0.1 - - [29/Nov/2013:16:44:10 -0800] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [29/Nov/2013:16:44:15 -0800] "GET /Tackit/Login.jsp HTTP/1.1" 200 1310
+0:0:0:0:0:0:0:1 - - [29/Nov/2013:16:44:15 -0800] "GET /Tackit/css/bootstrap.min.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [29/Nov/2013:16:44:15 -0800] "GET /Tackit/css/signin.css HTTP/1.1" 304 -
+127.0.0.1 - - [29/Nov/2013:16:44:39 -0800] "GET /Tackit/Login.jsp HTTP/1.1" 200 1310
+127.0.0.1 - - [29/Nov/2013:16:44:41 -0800] "GET /Tackit/css/signin.css HTTP/1.1" 200 854
+127.0.0.1 - - [29/Nov/2013:16:44:41 -0800] "GET /Tackit/css/bootstrap.min.css HTTP/1.1" 200 102593
+127.0.0.1 - - [29/Nov/2013:16:44:53 -0800] "POST /Tackit/LoginVerify HTTP/1.1" 302 -
+127.0.0.1 - - [29/Nov/2013:16:44:54 -0800] "GET /Tackit/Login.jsp HTTP/1.1" 200 1369
+127.0.0.1 - - [29/Nov/2013:16:45:05 -0800] "POST /Tackit/LoginVerify HTTP/1.1" 302 -
+127.0.0.1 - - [29/Nov/2013:16:45:05 -0800] "GET /Tackit/Login.jsp HTTP/1.1" 200 1369
+127.0.0.1 - - [29/Nov/2013:16:45:19 -0800] "POST /Tackit/LoginVerify HTTP/1.1" 302 -
+127.0.0.1 - - [29/Nov/2013:16:45:19 -0800] "GET /Tackit/Login.jsp HTTP/1.1" 200 1369
